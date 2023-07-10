@@ -1,0 +1,6 @@
+module "datafetch" {
+       source = "./data"
+}
+output "instance_subnet_id" {
+  value = module.datafetch.instance_subnet_id
+}
